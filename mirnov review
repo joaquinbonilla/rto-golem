@@ -1,1 +1,9 @@
 Las descargas de la primera sesión (#42716 - #42746) no tienen el diagnóstico de mirnov disponible
+Segunda sesión (#43366 - #43378) presentó una falla con mirnov (en la página de golem figura que se usó, pero genera csv vacíos)
+La tercera sesión (#45078 - #45094) usa un formato distinto para las bobinas de mirnov. Entiendo que el código funciona con mirnov-4, pero estas descargas tienen 16 bobinas. 
+Por ahora modifiqué el código y se pueden cargar, pero forma un espectrograma bugged.
+Revisando cuarta sesión (#46469 - #46498):
+Descarga #46469 presenta una señal fuerte coherente durante un ms a los 32.5 ms. No sé a qué se pueda deber. Supongo que debe ser ruido, pues no se ve nada raro en la señal de la corriente del plasma en ese instante
+Descarga #46470 presenta señal coherente en el espectrograma a partir de los 7.5 ms, a partir de los 12 ms existen oscilaciones en Ip.
+Descarga #46471 presenta una corriente de plasma que crece con muchas oscilaciones. Esta perturbación se observa en los mismos tiempos en el espectrograma.
+En #46482 se presenta una señal coherente en muchas frecuencias a partir de los 13 ms, poco antes de que Ip empiece a oscilar. En el espectrograma se ve como el ruido típico de cuando una descarga está terminando.
